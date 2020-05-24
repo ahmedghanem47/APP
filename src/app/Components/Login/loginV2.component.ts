@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { AuthService } from '../../service/auth-service/auth.service';
+import { ApiService } from '../../Services/LoginV2/LoginAPI.service';
 import { ViewEncapsulation } from '@angular/core';
-import { TranslateService } from '@ngx-translate/core';
+//import { TranslateService } from '@ngx-translate/core';
 
 @Component({
    selector: 'ms-loginV2-session',
@@ -37,12 +37,13 @@ export class LoginV2Component {
       }
    ]
 
-   constructor( public authService: AuthService,
-                public translate : TranslateService ) { }
+   constructor( public ApiService: ApiService,
+                //public translate : TranslateService 
+                ) { }
 
    // when email and password is correct, user logged in.
    login(value) {
-      this.authService.loginUser(value);
+      //this.ApiService.loginUser(value);
    }
 }
 
