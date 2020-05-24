@@ -124,6 +124,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "APAN"
+    }
+  },
+  "defaultProject": "APAN",
+  "cli": {
+    "analytics": "7c9dfe4a-7aa9-4bdd-a4d8-161d8d0e35a9"
+  }
 }
